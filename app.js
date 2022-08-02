@@ -26,16 +26,16 @@ let score2 = 0;
 
 nameFormButton.addEventListener('click', () => {
     const teamOneInput = teamOneName.value;
-     teamOneLabel.textContent = teamOneInput;
+    teamOneLabel.textContent = teamOneInput;
 
-     const teamTwoInput = teamTwoName.value;
+    const teamTwoInput = teamTwoName.value;
     teamTwoLabel.textContent = teamTwoInput;
      
      //set the state to this data from the form
-name1 = teamOneName.textContent;
-name2 = teamTwoName.textContent;
+    name1 = teamOneName.textContent;
+    name2 = teamTwoName.textContent;
     // reset the form values
-     refreshCurrentGameEl();
+    refreshCurrentGameEl();
     // refresh the current game element with new data by calling the appropriate function
 });
 
@@ -59,7 +59,7 @@ teamTwoAddButton.addEventListener('click', () => {
 
 teamOneSubtractButton.addEventListener('click', () => {
     // decrement the current state for team one's score
-currentGameEl.textContent = '';
+    currentGameEl.textContent = '';
     score1--;
     refreshCurrentGameEl();
     
@@ -103,6 +103,7 @@ finishGameButton.addEventListener('click', () => {
 
 function refreshCurrentGameEl() {
     currentGameEl.textContent = '';
+    
 
     teamOneName.textContent = name1;
     teamTwoName.textContent = name2;
